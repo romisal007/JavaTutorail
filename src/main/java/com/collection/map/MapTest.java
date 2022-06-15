@@ -35,29 +35,29 @@ public class MapTest {
 		// If map does not have key then it return null
 		System.out.println("301 : " + mapHttpError.get(301));
 
-		//checking specific key
+		// checking specific key
 		if (mapHttpError.containsKey(200)) {
 			System.out.println("Http Status 200");
 		}
-		
-		if(mapHttpError.containsValue("ok")) {
+
+		if (mapHttpError.containsValue("ok")) {
 			System.out.println("Status is ok");
 		}
-		
-		String removablvalue=mapHttpError.remove(500);
-		if( removablvalue!=null) {
+
+		String removablvalue = mapHttpError.remove(500);
+		if (removablvalue != null) {
 			System.out.println("500 internal server error is removed");
 		}
-		
+
 		mapHttpError.put(304, "Not Modified");
-		//replacing value associated wit key 
-		System.out.println("Map before value replcae "+ mapHttpError);
+		// replacing value associated wit key
+		System.out.println("Map before value replcae " + mapHttpError);
 		mapHttpError.replace(304, "No changes");
-		System.out.println("map after value replace : "+mapHttpError);
-		
-		int size= mapHttpError.size();
+		System.out.println("map after value replace : " + mapHttpError);
+
+		int size = mapHttpError.size();
 		System.out.println(size);
-		
+
 	}
 
 }

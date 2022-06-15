@@ -1,12 +1,9 @@
 package com.collection.map;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 
 public class MapTestIterationTest {
@@ -41,17 +38,17 @@ public class MapTestIterationTest {
 		}
 
 		System.out.println();
-		//entrySet(): returns a Set view of the mappings contained in this map
-		
-		Set<Map.Entry<String, String>> entries=mapCountryCode.entrySet();
-		
+		// entrySet(): returns a Set view of the mappings contained in this map
+
+		Set<Map.Entry<String, String>> entries = mapCountryCode.entrySet();
+
 		for (Map.Entry<String, String> entry : entries) {
-			
-			String code=entry.getKey();
-			String countries=entry.getValue();
-			System.out.println( code+":" + countries );
+
+			String code = entry.getKey();
+			String countries = entry.getValue();
+			System.out.println(code + ":" + countries);
 		}
-		
+
 	}
 
 }
