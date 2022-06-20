@@ -24,7 +24,7 @@ public class ArraySortTest {
 		emp[1] = new Employees("Rohit", 26, 30000);
 		emp[0] = new Employees("balu", 30, 45000);
 		emp[2] = new Employees("Shyam", 45, 10000);
-		emp[3] = new Employees("Shyam", 21, 15000);
+		emp[3] = new Employees("Raju", 21, 15000);
 		Employees[] emp2copy = Arrays.copyOf(emp, emp.length);
 		System.out.println("***-----------sorting using Age Comparable interface  compareto method----------******");
 		System.out.println("Emp Details before sorting uing age :" + Arrays.toString(emp));

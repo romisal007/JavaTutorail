@@ -1,7 +1,5 @@
 package com.array;
 
-import java.util.Comparator;
-
 public class Employees implements Comparable<Employees> {
 
 	private String name;
@@ -15,10 +13,13 @@ public class Employees implements Comparable<Employees> {
 		this.salary = salary;
 	}
 
+	
+
 	@Override
 	public String toString() {
 		return "Employees [name=" + name + ", age=" + age + ", salary=" + salary + "]";
 	}
+	
 
 	public String getName() {
 		return name;
