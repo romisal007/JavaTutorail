@@ -33,7 +33,7 @@ public class EqualsTest {
 		boolean founds2=slist.contains(searchS2);
 		System.out.println("Found 123 ?:"+found1);
 		System.out.println("Found 789 ?:"+founds2);
-//equal makes code simpler because to search we required to write following code  in studentclass
+//equal makes code simpler because to search we required to write following code  in studentclass or seperate method
 		/*
 		 * public boolean searchStudent(List<Student> listStudents, String id) { for
 		 * (Student student : listStudents) { if (student.getId().equals(id)) { return
